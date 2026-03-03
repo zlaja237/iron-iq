@@ -692,7 +692,7 @@ async function fetchFromApi(s) {
   try {
     const all = []; let page = 1;
     while (true) {
-      const res = await fetch(`${base}?page=${page}&pageSize=20`, { headers: { 'api-key': s.hevyKey } });
+      const res = await fetch(`${base}?page=${page}&pageSize=10`, { headers: { 'api-key': s.hevyKey } });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       const wkts = data.workouts || [];
