@@ -698,7 +698,7 @@ async function fetchFromApi(s) {
       const wkts = data.workouts || [];
       const inRange = wkts.filter(w => w.start_time >= sinceISO);
       all.push(...inRange);
-      if (wkts.length < 20 || inRange.length < wkts.length) break;
+      if (wkts.length < 10 || inRange.length < wkts.length) break;
       page++;
     }
     workouts = all;
