@@ -230,7 +230,6 @@
     </div>
     <div class="modal-body">
 
-```
   <!-- PROFILE -->
   <div class="modal-section">
     <div class="modal-section-label">👤 Your Profile</div>
@@ -366,7 +365,6 @@
       </div>
     </div>
 
-```
 <div class="content" id="mainContent">
   <!-- OVERVIEW -->
   <div class="tab-pane active" id="tab-overview">
@@ -457,7 +455,6 @@
     </div>
   </div>
 </div>
-```
 
   </div>
 </div>
@@ -569,8 +566,7 @@ function updateModalDataSection() {
       <div class="divider" style="margin:10px 0">or paste raw data</div>
       <textarea class="paste-area" id="mCsvPaste" placeholder="Paste Hevy export rows here…"></textarea>
 
-```
-</div>`;
+</div>;
 
 // re-attach drag events
 setTimeout(() => {
@@ -580,7 +576,6 @@ setTimeout(() => {
   drop.addEventListener('dragleave', () => drop.classList.remove('drag-over'));
   drop.addEventListener('drop', e => { e.preventDefault(); drop.classList.remove('drag-over'); if (e.dataTransfer.files[0]) modalCSVSelected(e.dataTransfer.files[0]); });
 }, 50);
-```
 
 }
 }
